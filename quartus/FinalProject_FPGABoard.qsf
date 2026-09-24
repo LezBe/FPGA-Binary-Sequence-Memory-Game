@@ -1,0 +1,98 @@
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime project settings
+# Original project: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+#
+# -------------------------------------------------------------------------- #
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEBA4F23C7
+set_global_assignment -name TOP_LEVEL_ENTITY FinalProject_FPGABoard
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:23:07  MAY 12, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+
+set_global_assignment -name VERILOG_FILE ../src/ID_check.v
+set_global_assignment -name VERILOG_FILE ../src/TwoDigitTimer.v
+set_global_assignment -name VERILOG_FILE ../src/StackReg.v
+set_global_assignment -name VERILOG_FILE ../src/ScoreTracker.v
+set_global_assignment -name VERILOG_FILE ../src/PW_Auth.v
+set_global_assignment -name VERILOG_FILE ../src/OneSecTimer.v
+set_global_assignment -name VERILOG_FILE ../src/OneMilSec.v
+set_global_assignment -name VERILOG_FILE ../src/OneHundredMilSecTimer.v
+set_global_assignment -name VERILOG_FILE ../src/LoadRegister.v
+set_global_assignment -name VERILOG_FILE ../src/LFSR16_8016.v
+set_global_assignment -name VERILOG_FILE ../src/GameController.v
+set_global_assignment -name VERILOG_FILE ../src/FinalProject_FPGABoard.v
+set_global_assignment -name VERILOG_FILE ../src/Digit_Timer.v
+set_global_assignment -name VERILOG_FILE ../src/Decoder_4to7.v
+set_global_assignment -name VERILOG_FILE ../src/countTo100.v
+set_global_assignment -name VERILOG_FILE ../src/countTo10.v
+set_global_assignment -name VERILOG_FILE ../src/CompleteScoreTracker.v
+set_global_assignment -name VERILOG_FILE ../src/ButtonShaper.v
+set_global_assignment -name VERILOG_FILE ../src/AccessController.v
+
+set_global_assignment -name QIP_FILE ID_ROM.qip
+set_global_assignment -name QIP_FILE PW_ROM.qip
+set_global_assignment -name QIP_FILE RAM_ScoreTracker.qip
+
+set_location_assignment PIN_AB21 -to DecOut_Level[6]
+set_location_assignment PIN_AB22 -to DecOut_Level[5]
+set_location_assignment PIN_V14 -to DecOut_Level[4]
+set_location_assignment PIN_Y14 -to DecOut_Level[3]
+set_location_assignment PIN_AA10 -to DecOut_Level[2]
+set_location_assignment PIN_AB17 -to DecOut_Level[1]
+set_location_assignment PIN_Y19 -to DecOut_Level[0]
+set_location_assignment PIN_AA22 -to DecOut_Plyr1[6]
+set_location_assignment PIN_Y21 -to DecOut_Plyr1[5]
+set_location_assignment PIN_Y22 -to DecOut_Plyr1[4]
+set_location_assignment PIN_W21 -to DecOut_Plyr1[3]
+set_location_assignment PIN_W22 -to DecOut_Plyr1[2]
+set_location_assignment PIN_V21 -to DecOut_Plyr1[1]
+set_location_assignment PIN_U21 -to DecOut_Plyr1[0]
+set_location_assignment PIN_U22 -to DecOut_RNG[6]
+set_location_assignment PIN_AA17 -to DecOut_RNG[5]
+set_location_assignment PIN_AB18 -to DecOut_RNG[4]
+set_location_assignment PIN_AA18 -to DecOut_RNG[3]
+set_location_assignment PIN_AA19 -to DecOut_RNG[2]
+set_location_assignment PIN_AB20 -to DecOut_RNG[1]
+set_location_assignment PIN_AA20 -to DecOut_RNG[0]
+set_location_assignment PIN_P9 -to DecOut_curCnt_One[6]
+set_location_assignment PIN_Y15 -to DecOut_curCnt_One[5]
+set_location_assignment PIN_U15 -to DecOut_curCnt_One[4]
+set_location_assignment PIN_U16 -to DecOut_curCnt_One[3]
+set_location_assignment PIN_V20 -to DecOut_curCnt_One[2]
+set_location_assignment PIN_Y20 -to DecOut_curCnt_One[1]
+set_location_assignment PIN_U20 -to DecOut_curCnt_One[0]
+set_location_assignment PIN_W19 -to DecOut_curCnt_Ten[6]
+set_location_assignment PIN_C2 -to DecOut_curCnt_Ten[5]
+set_location_assignment PIN_C1 -to DecOut_curCnt_Ten[4]
+set_location_assignment PIN_P14 -to DecOut_curCnt_Ten[3]
+set_location_assignment PIN_T14 -to DecOut_curCnt_Ten[2]
+set_location_assignment PIN_M8 -to DecOut_curCnt_Ten[1]
+set_location_assignment PIN_N9 -to DecOut_curCnt_Ten[0]
+
+set_location_assignment PIN_W9 -to PswdEnter_B
+set_location_assignment PIN_M6 -to Start_B
+set_location_assignment PIN_M7 -to Load_B
+set_location_assignment PIN_U7 -to Logout_B
+set_location_assignment PIN_AA2 -to LgdIn
+set_location_assignment PIN_AA1 -to LgdOut
+set_location_assignment PIN_L1 -to isGlobalWin
+set_location_assignment PIN_L2 -to isPersonalWin
+
+set_location_assignment PIN_AA14 -to Pswd[0]
+set_location_assignment PIN_AA13 -to Pswd[1]
+set_location_assignment PIN_AB13 -to Pswd[2]
+set_location_assignment PIN_AB12 -to Pswd[3]
+set_location_assignment PIN_U13 -to Plyr1[0]
+set_location_assignment PIN_V13 -to Plyr1[1]
+set_location_assignment PIN_T13 -to Plyr1[2]
+set_location_assignment PIN_T12 -to Plyr1[3]
+set_location_assignment PIN_AA15 -to Level[0]
+set_location_assignment PIN_AB15 -to Level[1]
+set_location_assignment PIN_P22 -to rst
+set_location_assignment PIN_M9 -to clk
