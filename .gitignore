@@ -1,0 +1,32 @@
+# Quartus build products
+db/
+incremental_db/
+output_files/
+greybox_tmp/
+*.rpt
+*.summary
+*.smsg
+*.sof
+*.pof
+*.jdi
+*.qws
+*.qarlog
+*.archive.qmsg
+
+# ModelSim / Questa output
+work/
+transcript
+vsim.wlf
+*.wlf
+modelsim.ini
+
+# Backups / temporary files
+*.bak
+*.tmp
+*~
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
