@@ -220,13 +220,9 @@ This prevents one physical press from being interpreted as repeated game actions
 │   ├── ID_ROM.*
 │   ├── PW_ROM.*
 │   └── RAM_ScoreTracker.*
-├── docs/
-│   ├── Final_Project_Presentation.pptx
-│   ├── PROJECT_ARCHITECTURE.md
-│   └── PROJECT_STATUS.md
-└── images/
-    ├── system_architecture.png
-    └── accesscontrol_fsm.svg
+└── docs/
+    ├── PROJECT_ARCHITECTURE.md
+    └── PROJECT_STATUS.md
 ```
 
 Generated Quartus compilation databases and output files are intentionally excluded.
